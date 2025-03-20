@@ -1,0 +1,19 @@
+html {
+    font-family: Montserrat;
+}
+
+textarea {
+    font-family: Montserrat;
+}
+
+input {
+    font-family: Montserrat;
+}
+
+strong {
+    font-weight: 800;
+}
+
+#lander {
+    display: grid;
+}
