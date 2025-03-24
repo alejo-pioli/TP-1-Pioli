@@ -8,6 +8,10 @@ main {
     margin: auto;
 }
 
+section {
+    padding-top: 2em;
+}
+
 #navbar {
     background-color: black;
     position: fixed;
@@ -42,7 +46,8 @@ main {
 
 #lander {
     display: flex;
-    margin: 6em auto;
+    margin: auto;
+    padding: 8em 0 6em;
 }
 
 #info {
@@ -53,7 +58,7 @@ main {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 4.7em;
     margin-bottom: 0.2em;
 }
 
@@ -78,10 +83,99 @@ p {
     align-items: center;
 }
 
-#technologies{
+#technologies-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.title {
+    width: fit-content;
+    border-bottom: 4px solid black;
+}
+
+.big {
+    font-size: 3em;
+    margin: 1em 0 0.5em;
+}
+
+#experience {
+    margin: 3em auto
+}
+
+#jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.job {
+    text-align: justify;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    width:70%;
+    margin: auto;
+}
+
+#projects-container img{
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8% 8% 0 0;
+}
+
+#projects-container a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#projects-container h3 {
+    margin: auto 0;
+    padding: 0.5em;
+    font-size: 1.4em;
+    align-items: center;
+
+}
+
+.project-tile {
+    border-radius: 8%;
+    background-color: black;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    vertical-align:middle;
+    background-color: black;
+    padding: 1em;
+    border-radius: 0.8em;
+}
+
+.button:hover{
+    background-color: gray;
+}
+
+#socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2em 0;
+    row-gap: 0.5em;
+}
+
+#form-button {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 1.15em;
 }
 
 textarea {
@@ -96,7 +190,7 @@ strong {
     font-weight: 800;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
     #navbar {
         position: relative;
@@ -113,18 +207,66 @@ strong {
 
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 1180px) {
+
+    #lander {
+        padding: 3.5em 0;
+    }
+    #portrait {
+        width: 275px;
+        height: auto;
+    }
+    #projects-container{
+        width:80%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #lander {
+        padding: 1em 0;
+    }
+    #portrait {
+        width: 200px;
+        height: auto;
+    }
+    #projects-container{
+        width:100%;
+    }
+}
+
+@media (max-width: 690px) {
 
     #lander {
         display: inline;
         width: 100%;
         text-align: center;
+        
     }
 
     #info {
-        padding: 0 3em;
+        padding: 1em 1em;
         text-align: justify;
         vertical-align: middle;
         margin: 0em;
+    }
+
+    #portrait {
+        width: 400px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+
+    #jobs {
+        grid-template-columns: 1fr;
+    }
+
+    #projects-container {
+        grid-template-columns: 1fr;
+        width: 65%;
     }
 }
