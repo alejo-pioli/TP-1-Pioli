@@ -17,13 +17,13 @@
 .light-mode {
     --color-primary: white;
     --color-secondary: black;
-    --color-third: gray;
+    --color-third: #E78625;
 }
 
 .dark-mode {
     --color-primary: black;
-    --color-secondary: white;
-    --color-third: lightgray;
+    --color-secondary: #FAE4BB;
+    --color-third: #E78625;
 }
 
 html {
@@ -164,7 +164,7 @@ p {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 8% 8% 0 0;
+    border-radius: 2% 2% 0 0;
 }
 
 #projects-container a {
@@ -174,7 +174,7 @@ p {
 }
 
 .project-tile:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-third);
 }
 
 #projects-container h3 {
@@ -186,7 +186,7 @@ p {
 }
 
 .project-tile {
-    border-radius: 8%;
+    border-radius: 2%;
     background-color: var(--color-secondary);
 }
 
@@ -199,11 +199,11 @@ p {
     vertical-align: middle;
     background-color: var(--color-secondary);
     padding: 1em;
-    border-radius: 0.8em;
+    border-radius: 0.4em;
 }
 
 .button:hover {
-    background-color: var(--color-third);
+    background-color: var(--color-third);cursor: pointer;
 }
 
 #socials {
@@ -225,6 +225,7 @@ p {
     padding: 2em;
     width: 70%;
     margin: auto;
+    box-sizing: border-box;
 }
 
 #contact-main p {
@@ -232,25 +233,33 @@ p {
 }
 
 #contact-main input {
-    height: 2em;
-    width: 100%;
+    height: 2em; width: 100%;
     max-width: 600px;
     border: 2px solid var(--color-secondary);
     margin-bottom: 1.5em;
     background-color: var(--color-primary);
+    color: var(--color-secondary);font-weight: 700;
 }
 
 #contact-main textarea {
-    width: 100%;
+    height: auto; width: 100%;
     max-width: 600px;
     border: 2px solid var(--color-secondary);
-    background-color: var(--color-primary);
+    background-color: var(--color-primary);color: var(--color-secondary);font-weight: 700;
 }
 
 #contact-main button {
     font-family: Montserrat;
     font-size: 1em;
     border: 0
+}
+
+#contact-main textarea:focus, #contact-main input:focus{
+    outline: none;border-color: var(--color-third);
+}
+
+form {
+    width: 100%;
 }
 
 textarea {
@@ -268,23 +277,6 @@ strong {
 footer {
     padding: 1em 1.4em 0;
     text-align: center;
-}
-
-@media (max-width: 530px) {
-
-    #navbar {
-        position: relative;
-        text-align: end;
-    }
-
-    #navbar ul {
-        display: inline;
-    }
-
-    #navbar li {
-        padding: 0.5em;
-    }
-
 }
 
 
@@ -316,6 +308,10 @@ footer {
     }
 
     #projects-container {
+        width: 100%;
+    }
+
+    #contact-main {
         width: 100%;
     }
 }
@@ -353,4 +349,35 @@ footer {
         grid-template-columns: 1fr;
         width: 65%;
     }
+
+    #contact-main input, #contact-main textarea {
+        height: 2.5em;
+}}
+
+@media (max-width: 530px) {
+
+    #navbar {
+        position: relative;
+        text-align: end;
+    }
+
+    #navbar ul {
+        display: inline;
+    }
+
+    #navbar li {
+        padding: 0.5em;
+    }
+
+
+    .title {
+        margin-top: 0;
+    }
+
+#contact-main {
+    display:inline-block;
+    padding: 2em;
+}
+
+
 }
