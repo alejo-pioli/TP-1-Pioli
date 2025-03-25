@@ -13,25 +13,30 @@
 
 <body>
     <header>
-        <nav></nav>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Volver</a></li>
+                <li><a id="dark-mode-button">Cambiar modo oscuro</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h1>Formulario de contacto</h1>
+    <main id="contact-main">
+        <h1 class="title big">Formulario de contacto</h1>
         <form>
             <div>
-                <p>Nombre</p><input type="text" placeholder="Nombre">
+                <p><strong>Nombre:</strong></p><input type="text" required>
             </div>
             <div>
-                <p>Correo electrónico</p><input type="email" placeholder="Correo electrónico">
+                <p><strong>Correo electrónico:</strong></p><input type="email" required>
             </div>
             <div>
-                <p>Mensaje</p>
-                <textarea placeholder="Mensaje"></textarea>
+                <p><strong>Mensaje:</strong></p>
+                <textarea rows="6" cols="40" required></textarea>
             </div>
-            <section><button type="submit">Enviar</button></section>
+            <section><button class="button" type="submit"><strong>Enviar</strong></button></section>
         </form>
     </main>
-    <footer></footer>
+    <footer><h6>Sitio web realizado puramente por fines educativos.</h6></footer>
 </body>
-
+<script src="scripts/script.js"></script>
 </html>
