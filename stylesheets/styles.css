@@ -264,6 +264,7 @@ form {
 
 textarea {
     font-family: Montserrat;
+    field-sizing: content;
 }
 
 input {
@@ -347,7 +348,7 @@ footer {
 
     #projects-container {
         grid-template-columns: 1fr;
-        width: 65%;
+        width: 85%;
     }
 
     #contact-main input, #contact-main textarea {
