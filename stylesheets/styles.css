@@ -62,7 +62,7 @@ section {
 #navbar a {
     text-decoration: none;
     color: var(--color-primary);
-    padding: 1em;
+    padding: 1.5em 1em;
 }
 
 #navbar ul {
@@ -203,7 +203,8 @@ p {
 }
 
 .button:hover {
-    background-color: var(--color-third);cursor: pointer;
+    background-color: var(--color-third);
+    cursor: pointer;
 }
 
 #socials {
@@ -233,19 +234,24 @@ p {
 }
 
 #contact-main input {
-    height: 2em; width: 100%;
+    height: 2em;
+    width: 100%;
     max-width: 600px;
     border: 2px solid var(--color-secondary);
     margin-bottom: 1.5em;
     background-color: var(--color-primary);
-    color: var(--color-secondary);font-weight: 700;
+    color: var(--color-secondary);
+    font-weight: 700;
 }
 
 #contact-main textarea {
-    height: auto; width: 100%;
+    height: auto;
+    width: 100%;
     max-width: 600px;
     border: 2px solid var(--color-secondary);
-    background-color: var(--color-primary);color: var(--color-secondary);font-weight: 700;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-weight: 700;
 }
 
 #contact-main button {
@@ -254,8 +260,10 @@ p {
     border: 0
 }
 
-#contact-main textarea:focus, #contact-main input:focus{
-    outline: none;border-color: var(--color-third);
+#contact-main textarea:focus,
+#contact-main input:focus {
+    outline: none;
+    border-color: var(--color-third);
 }
 
 form {
@@ -264,7 +272,6 @@ form {
 
 textarea {
     font-family: Montserrat;
-    field-sizing: content;
 }
 
 input {
@@ -313,7 +320,7 @@ footer {
     }
 
     #contact-main {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -351,9 +358,11 @@ footer {
         width: 85%;
     }
 
-    #contact-main input, #contact-main textarea {
+    #contact-main input {
         height: 2.5em;
-}}
+    }
+
+}
 
 @media (max-width: 530px) {
 
@@ -367,18 +376,23 @@ footer {
     }
 
     #navbar li {
-        padding: 0.5em;
+        padding: 0;
     }
 
+    #navbar a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 0.5em 0;
+    }
 
     .title {
         margin-top: 0;
     }
 
-#contact-main {
-    display:inline-block;
-    padding: 2em;
-}
-
-
+    #contact-main {
+        display: inline-block;
+        padding: 2em;
+        width: 100%;
+    }
 }
