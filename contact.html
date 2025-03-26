@@ -25,14 +25,16 @@
         <h1 class="title big">Formulario de contacto</h1>
         <form action="https://app.formsubmit.site/f/97add0af-8aef-4256-bb78-730132837ebe" method="POST">
             <div>
-                <p><strong>Nombre:</strong></p><input type="text" required>
+                <p><strong>Nombre:</strong></p>
+                <input type="text" name="name" required>
             </div>
             <div>
-                <p><strong>Correo electrónico:</strong></p><input type="email" required>
+                <p><strong>Correo electrónico:</strong></p>
+                <input type="email" name="email" required>
             </div>
             <div>
                 <p><strong>Mensaje:</strong></p>
-                <textarea rows="6" cols="40" required></textarea>
+                <textarea rows="6" cols="40" name="message" required></textarea>
             </div>
             <section><button class="button" type="submit"><strong>Enviar</strong></button></section>
         </form>
